@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TellemaKeys</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: black;
+        }
+        
+
+        .navbar-inverse .navbar-nav .open .dropdown-menu {
+            background-color:  rgb(34, 34, 34)
+        }
+
+        .navbar-inverse .navbar-nav .open .dropdown-menu li a {
+            color: rgb(244, 249, 252);
+        }
+
+        /* Estilizando o link no estado de hover dentro do dropdown */
+        .navbar-inverse .navbar-nav .open .dropdown-menu li a:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -32,7 +51,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
                         aria-expanded="false" style="color: #f4f9fc;" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#f4f9fc'" >Plataformas<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" style="color: black;">
                             <li class="#"><a href="#" >PC</a></li>
                             <li><a href="#" >Xbox</a></li>
                             <li><a href="#">Sony</a></li>
@@ -43,7 +62,7 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="textmenu"><a href="#" style="color: #f4f9fc;" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#f4f9fc'">Contato</a></li>
+                    <li><a href="#"  class="textmenu" style="color: #f4f9fc;" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#f4f9fc'">Contato</a></li>
                 </ul>
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group">
@@ -56,5 +75,6 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+
 </body>
 </html>
