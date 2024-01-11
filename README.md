@@ -1,3 +1,3 @@
 # PhpEcommerce
 
-Projeto em desenvolvimento utilizando PHP, BOOTSTRAP e MySQL
+Projeto em desenvolvimento utilizando PHP, BOOTSTRAP , CSS3 e MySQL
