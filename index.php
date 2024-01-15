@@ -13,21 +13,24 @@
         body{
             background-color: black;
         }
+        @media(max-width: 1000px){
+           
+          .container-fluid .navbar-header img{
 
-       @media(min-width: 880px){
-        .navbar-collapse.collapse
-        {
-          display: block!important;
-          height: auto!important;
-          padding-bottom: 0;
-          overflow: visible!important;
-          width: auto;
-        border-top: 0;
-        -webkit-box-shadow: none;
-          box-shadow: none;
+            width: 1000px;
+          }
+
         }
-      }
-        
+        .container-fluid .navbar-header img
+        {
+          width: 225px;
+          height: 50px;
+        }
+        .navbar-brand
+        {
+          padding: 0px;
+        }
+      
         .navbar-inverse .container-fluid  .navbar-collapse .textmenu  {
             color: rgb(244, 249, 252);
         }
@@ -60,6 +63,25 @@
             background-color: black;
 
         }
+        
+        @media (min-width: 799px){
+        .navbar-right {
+          float: right!important;
+        margin-right: 25px;
+        }
+      }
+      @media (max-width: 800px){
+        .navbar-right {
+          float: right!important;
+        margin-right: -40px;
+        }
+      }
+      .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
        
 
         .navbar-inverse .container-fluid  .navbar-collapse .animated-button1 {
@@ -93,11 +115,6 @@
   {
     color: rgb(244, 249, 252);
     text-transform:initial;
-  
-    
-    
-   
-    
   }
   
   
@@ -212,6 +229,7 @@
               transform: translateY(100%);
     }
   }
+
     </style>
 </head>
 <body>
@@ -244,9 +262,6 @@
                     </li>
                 </ul>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" class="textmenu">Contato</a></li>
-                </ul>
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Horizon Zero Dawn">
