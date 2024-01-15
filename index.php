@@ -13,6 +13,20 @@
         body{
             background-color: black;
         }
+
+       @media(min-width: 880px){
+        .navbar-collapse.collapse
+        {
+          display: block!important;
+          height: auto!important;
+          padding-bottom: 0;
+          overflow: visible!important;
+          width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+      }
         
         .navbar-inverse .container-fluid  .navbar-collapse .textmenu  {
             color: rgb(244, 249, 252);
@@ -36,32 +50,18 @@
         .navbar-inverse .navbar-nav .open .dropdown-menu li a:hover {
             color: red;
         }
-        .navbar-form .form-control {
-             display: inline-block;
-             width: auto;
-            vertical-align: middle;
-             margin-bottom: 25px;
-             margin-right: 13px;
+        .form-control  
+        {
+          display: flex;
+          width: 55%;
         }
-
-        @media (max-width: 800px) {
-    
-            .navbar-form .form-control{
-                margin-bottom: 4px;
-                margin-right: 0px;
-
-        
-        
-             }
-        }
-
-
-
-        /* Estilizando o link no estado de hover dentro do dropdown */
+       
         .navbar-inverse .navbar-nav .open .dropdown-menu li a:hover {
             background-color: black;
 
         }
+       
+
         .navbar-inverse .container-fluid  .navbar-collapse .animated-button1 {
     background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
     padding: 10px 20px;
@@ -78,7 +78,29 @@
     text-decoration: none;
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            border: none;
+            margin-left: 10px;
+            
   }
+  @media(max-width: 750px)
+  {
+    .navbar-inverse .container-fluid  .navbar-collapse .animated-button1
+    {
+         margin-left: 0px;
+    }
+  }
+  .navbar-inverse .container-fluid  .navbar-collapse .animated-button1 a
+  {
+    color: rgb(244, 249, 252);
+    text-transform:initial;
+  
+    
+    
+   
+    
+  }
+  
+  
   
   .navbar-inverse .container-fluid  .navbar-collapse .animated-button1::before {
     content: '';
@@ -91,6 +113,8 @@
     opacity: 0;
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
+    border: none;
+    outline: none;
   }
   
   .navbar-inverse .container-fluid  .navbar-collapse .animated-button1:hover::before {
@@ -194,13 +218,13 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">TellemaKeys</a>
+               <img src="assets/logo.png" alt="" class="navbar-brand"> 
             </div>
 
             <!-- Navegação -->
@@ -227,13 +251,15 @@
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Horizon Zero Dawn">
                     </div>
-                    <a href="#" class="animated-button1">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Buscar
-                    </a>
+                    <button type="submit"  class="animated-button1"><a href="#" >
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          Buscar
+                      </a>
+                    </button>
+                    
                 </form>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
