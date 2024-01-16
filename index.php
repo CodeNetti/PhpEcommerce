@@ -13,14 +13,21 @@
         body{
             background-color: black;
         }
-        @media(max-width: 1000px){
-           
-          .container-fluid .navbar-header img{
+        .container-fluid {
+          padding-right: 0px;
+          padding-left: 0px;
+          margin-right: auto;
+          margin-left: auto;
+      }
+      @media(max-width: 799px){
 
-            width: 1000px;
-          }
-
-        }
+        .container-fluid .navbar-collapse {         
+         padding-left: 30px;        
+     }
+      }
+       
+        
+        
         .container-fluid .navbar-header img
         {
           width: 225px;
@@ -66,23 +73,17 @@
         
         @media (min-width: 799px){
         .navbar-right {
-          float: right!important;
-        margin-right: 25px;
+          
+          margin-right: 0px
         }
       }
       @media (max-width: 800px){
         .navbar-right {
-          float: right!important;
-        margin-right: -40px;
+          
+        
         }
       }
-      .container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
-}
-       
+
 
         .navbar-inverse .container-fluid  .navbar-collapse .animated-button1 {
     background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
@@ -104,7 +105,7 @@
             margin-left: 10px;
             
   }
-  @media(max-width: 750px)
+  @media(max-width: 799px)
   {
     .navbar-inverse .container-fluid  .navbar-collapse .animated-button1
     {
@@ -230,6 +231,42 @@
     }
   }
 
+  .navbar-nav .navbar-right ul li a
+  {
+        
+    padding-top: 5px;
+
+
+  }
+  @media(max-width: 799px){
+    .navbar-nav.navbar-right.login {
+    list-style: none;
+    text-align: center;
+   
+    
+    /* Outros estilos */
+}
+    
+  }
+  .navbar-nav.navbar-right.login {
+    list-style: none;
+   
+    
+    /* Outros estilos */
+}
+
+.navbar-nav.navbar-right.login li a {
+    /* Estilos para o link dentro da lista */
+}
+  .navbar-inverse .navbar-right li a 
+  {
+    color: rgb(244, 249, 252);
+    
+    
+
+        
+  }
+
     </style>
 </head>
 <body>
@@ -242,7 +279,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <img src="assets/logo.png" alt="" class="navbar-brand"> 
             </div>
 
             <!-- Navegação -->
@@ -274,6 +310,9 @@
                           Buscar
                       </a>
                     </button>
+                    <ul class="navbar-nav navbar-right login">
+                      <li><a href="#"><img src="assets/login.png"></a></li>
+                    </ul>
                     
                 </form>
             </div><!-- /.navbar-collapse -->
