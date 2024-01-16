@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
+      /* Estilização do body e nav principal*/
         body{
             background-color: black;
         }
@@ -24,14 +25,19 @@
         .container-fluid .navbar-collapse {         
          padding-left: 30px;        
      }
-      }
-       
-        
-        
+     /*  Estilização da  Logo e menu*/
+      }   
         .container-fluid .navbar-header img
         {
           width: 225px;
           height: 50px;
+        }
+         /*Estilo dos Links de navegação*/
+        @media (min-width: 768px){
+          .navbar-nav>li>a {
+          padding-top: 15px;
+          padding-bottom: 20px;
+        }          
         }
         .navbar-brand
         {
@@ -83,40 +89,38 @@
         
         }
       }
-
-
         .navbar-inverse .container-fluid  .navbar-collapse .animated-button1 {
-    background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
-    padding: 10px 20px;
-    margin: 0px;
-    display: inline-block;
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    overflow: hidden;
-    color: #f7d4d4;
-    font-size: 10px;
-    letter-spacing: 2.5px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            border: none;
-            margin-left: 10px;
-            
-  }
-  @media(max-width: 799px)
-  {
-    .navbar-inverse .container-fluid  .navbar-collapse .animated-button1
-    {
-         margin-left: 0px;
-    }
-  }
-  .navbar-inverse .container-fluid  .navbar-collapse .animated-button1 a
-  {
-    color: rgb(244, 249, 252);
-    text-transform:initial;
-  }
+          background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
+          padding: 10px 20px;
+          margin: 0px;
+          display: inline-block;
+          -webkit-transform: translate(0%, 0%);
+                  transform: translate(0%, 0%);
+          overflow: hidden;
+          color: #f7d4d4;
+          font-size: 10px;
+          letter-spacing: 2.5px;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+                  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+                  border: none;
+                  margin-left: 10px;
+                  
+        }
+        @media(max-width: 799px)
+        {
+          .navbar-inverse .container-fluid  .navbar-collapse .animated-button1
+          {
+              margin-left: 0px;
+          }
+        }
+        .navbar-inverse .container-fluid  .navbar-collapse .animated-button1 a
+        {
+          color: rgb(244, 249, 252);
+          text-transform:initial;
+        }
   
   
   
@@ -230,6 +234,7 @@
               transform: translateY(100%);
     }
   }
+  /*estilização do  B de login*/
 
   .navbar-nav .navbar-right ul li a
   {
@@ -238,13 +243,14 @@
 
 
   }
+
   @media(max-width: 799px){
     .navbar-nav.navbar-right.login {
     list-style: none;
     text-align: center;
    
     
-    /* Outros estilos */
+    
 }
     
   }
@@ -252,7 +258,7 @@
     list-style: none;
    
     
-    /* Outros estilos */
+    
 }
 
 .navbar-nav.navbar-right.login li a {
