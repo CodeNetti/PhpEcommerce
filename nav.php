@@ -7,6 +7,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <img src="assets/logo.png" alt="" class="navbar-brand"> 
             </div>
 
             <!-- Navegação -->
